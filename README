@@ -1,0 +1,12 @@
+Projekt zaliczeniowy
+
+Temat: "Skarbonki"
+Program przyjmuje dane wejsciowe zapisane tak jak w instrukcjach z pliku ("input.txt").
+Aby skompliować program nalezy uzyc komendy make, a zeby uruchomic komendy: ./main.exe "nazwa pliku".
+Program na wyjsciu wypisze minimalna liczbe skarbonek, które nalezy rozbic.
+
+Aby rozwiazac zadanie nalezy zinterpretowac zbior skarbonek jako graf skierowany, w ktorym jesli skarbonka nr 1 ma klucz w skarbonce nr 2
+to w grafie tworzona jest krawedz 1->2.
+
+Do rozwiazania zadania na poczatku uzylem algorytmu Kruskala, aby stworzyć osobne zbiory dla wierzcholkow, do ktorych otwarcia wystarczy rozbicie
+jednej skarbonki w zbiorze. Następnie policzylem te zbiory. Liczba zbiorow = minimalna liczba rozbitych skarbonek.
